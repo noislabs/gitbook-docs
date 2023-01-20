@@ -17,7 +17,7 @@
 
 * [🛠 For DAPP Developers](use-cases/for-dapp-developers/README.md)
   * [📃 Contract implementation](use-cases/for-dapp-developers/contract-implementation.md)
-  * [🎲 Interacting with a DAPP](use-cases/for-dapp-developers/interacting-with-a-dapp.md)
+  * [Interacting with a DAPP](use-cases/for-dapp-developers/interacting-with-a-dapp.md)
   * [📦 Nois Toolbox](use-cases/for-dapp-developers/nois-toolbox.md)
     * [📃 DAPP - Rust](use-cases/for-dapp-developers/nois-toolbox/dapp-rust.md)
     * [🪛 JS](use-cases/for-dapp-developers/nois-toolbox/js.md)
@@ -30,5 +30,5 @@
 
 * [👶 5 year old kid](faq/5-year-old-kid.md)
 * [🕸 Web3 user](faq/web3-user.md)
-* [👩💻 Techie](faq/techie.md)
+* [👩💻 👩💻 Techie](faq/techie.md)
 * [🤑 Investor](faq/investor.md)

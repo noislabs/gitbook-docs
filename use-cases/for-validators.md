@@ -54,7 +54,7 @@ export CONFIG_DIR="$HOME/.noisd/config"
 # Update app.toml
 sed -i 's/minimum-gas-prices =.*$/minimum-gas-prices = "0.05unois"/' $CONFIG_DIR/app.toml
 
-# Update config.toml
+# Update block time settings (config.toml)
 sed -i 's/^timeout_propose =.*$/timeout_propose = "2000ms"/' $CONFIG_DIR/config.toml \
   && sed -i 's/^timeout_propose_delta =.*$/timeout_propose_delta = "500ms"/' $CONFIG_DIR/config.toml \
   && sed -i 's/^timeout_prevote =.*$/timeout_prevote = "1s"/' $CONFIG_DIR/config.toml \
@@ -62,6 +62,9 @@ sed -i 's/^timeout_propose =.*$/timeout_propose = "2000ms"/' $CONFIG_DIR/config.
   && sed -i 's/^timeout_precommit =.*$/timeout_precommit = "1s"/' $CONFIG_DIR/config.toml \
   && sed -i 's/^timeout_precommit_delta =.*$/timeout_precommit_delta = "500ms"/' $CONFIG_DIR/config.toml \
   && sed -i 's/^timeout_commit =.*$/timeout_commit = "1800ms"/' $CONFIG_DIR/config.toml
+  
+# Update external address (config.toml)
+MYIP=$(curl -sS https://api.ipify.org) sed -i 's/external_address =.*$/external_address = "'$MYIP':26656"/' $CONFIG_DIR/config.toml
 ```
 
 #### 7. Download the genesis file
