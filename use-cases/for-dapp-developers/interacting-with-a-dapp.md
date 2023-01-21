@@ -1,4 +1,4 @@
-# 🎲 Interacting with a DAPP
+# Interacting with a DAPP
 
 This document intends to help developers test the example contracts that are provided by nois
 
@@ -45,7 +45,8 @@ Instantiate the contract
        --fees=1000000ujunox \
        --broadcast-mode=block \
        --node=https://rpc.uni.juno.deuslabs.fi:443 -y \
-       |yq -r '.logs[0].events[0].attributes[0].value' )</code></pre>
+       |yq -r '.logs[0].events[0].attributes[0].value' )
+</code></pre>
 
 Request randomness (ie. roll the dice)
 

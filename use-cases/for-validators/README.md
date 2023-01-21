@@ -4,7 +4,7 @@ description: >-
   you want to run a sentry, most of the instructions are the same.
 ---
 
-# 🔐 For validators
+# 🔐 For Node Operators
 
 ### Run a full node
 
@@ -78,4 +78,4 @@ wget -O "$HOME/.noisd/config/genesis.json" https://raw.githubusercontent.com/noi
 
 #### 8. Draw the rest of the fucking owl
 
-The rest is similar to running a standard cosmos validator. You can check this cosmos hub docs [link](https://hub.cosmos.network/main/validators/validator-setup.html) for more details. For the faucet, rpc links, permanent peers and similar details visit [networks-and-contracts](../networks-and-contracts/ "mention")
+The rest is similar to running a standard cosmos validator. You can check this cosmos hub docs [link](https://hub.cosmos.network/main/validators/validator-setup.html) for more details. For the faucet, rpc links, permanent peers and similar details visit [networks-and-contracts](../../networks-and-contracts/ "mention")

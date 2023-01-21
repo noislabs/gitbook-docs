@@ -26,8 +26,8 @@ We've put together some helpful guides for you to get what you need quickly and 
 [for-dapp-developers](use-cases/for-dapp-developers/)
 {% endcontent-ref %}
 
-{% content-ref url="use-cases/for-validators.md" %}
-[for-validators.md](use-cases/for-validators.md)
+{% content-ref url="use-cases/for-validators/" %}
+[for-validators](use-cases/for-validators/)
 {% endcontent-ref %}
 
 {% content-ref url="use-cases/for-bot-runners.md" %}
