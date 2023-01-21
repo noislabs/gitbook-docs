@@ -23,6 +23,7 @@
     * [🪛 JS](use-cases/for-dapp-developers/nois-toolbox/js.md)
 * [🏗 For Nois Developers](use-cases/for-nois-developers.md)
 * [🔐 For Node Operators](use-cases/for-validators.md)
+* [Status checks](use-cases/status-checks.md)
 * [🤖 For Bot Runners](use-cases/for-bot-runners.md)
 * [🌉 For IBC relayer operators](use-cases/for-ibc-relayer-operators.md)
 
