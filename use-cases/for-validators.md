@@ -63,8 +63,10 @@ sed -i 's/^timeout_propose =.*$/timeout_propose = "2000ms"/' $CONFIG_DIR/config.
   && sed -i 's/^timeout_precommit_delta =.*$/timeout_precommit_delta = "500ms"/' $CONFIG_DIR/config.toml \
   && sed -i 's/^timeout_commit =.*$/timeout_commit = "1800ms"/' $CONFIG_DIR/config.toml
   
-# Update external address (config.toml)
-MYIP=$(curl -sS https://api.ipify.org) sed -i 's/external_address =.*$/external_address = "'$MYIP':26656"/' $CONFIG_DIR/config.toml
+# Update p2p setting (config.toml)
+MYIP=$(curl -sS https://api.ipify.org) sed -i 's/external_address =.*$/external_address = "'$MYIP':26656"/' $CONFIG_DIR/config.toml \
+  && sed -i 's/^max_num_inbound_peers =.*$/max_num_inbound_peers = 80/' $CONFIG_DIR/config.toml \
+  && sed -i 's/^max_num_outbound_peers =.*$/max_num_outbound_peers = 40/' $CONFIG_DIR/config.toml
 ```
 
 #### 7. Download the genesis file
