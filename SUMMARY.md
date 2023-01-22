@@ -24,6 +24,7 @@
 * [🏗 For Nois Developers](use-cases/for-nois-developers.md)
 * [🔐 For Node Operators](use-cases/for-validators/README.md)
   * [Status checks](use-cases/for-validators/status-checks.md)
+  * [Using systemd](use-cases/for-validators/using-systemd.md)
 * [🤖 For Bot Runners](use-cases/for-bot-runners.md)
 * [🌉 For IBC relayer operators](use-cases/for-ibc-relayer-operators.md)
 
