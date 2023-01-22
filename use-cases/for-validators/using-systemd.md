@@ -42,5 +42,5 @@ sudo systemctl enable nois
 sudo systemctl restart nois
 
 # Watch logs
-sudo journalctl -u noisd -f -o cat
+sudo journalctl -u nois -f -o cat
 ```

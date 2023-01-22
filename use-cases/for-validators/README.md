@@ -64,8 +64,8 @@ sed -i 's/^timeout_propose =.*$/timeout_propose = "2000ms"/' $CONFIG_DIR/config.
   && sed -i 's/^timeout_commit =.*$/timeout_commit = "1800ms"/' $CONFIG_DIR/config.toml
   
 # Update p2p setting (config.toml)
-export MY_EXTERNAL_IP=$(curl -sS https://api.ipify.org) # or set explicitely if this API does not return the correct value
-sed -i 's/external_address =.*$/external_address = "'$MY_EXTERNAL_IP':26656"/' $CONFIG_DIR/config.toml \
+export MY_EXTERNAL_ADDR="$(curl -sS https://api.ipify.org):26656" # or set explicitely if this API does not return the correct value
+sed -i 's/external_address =.*$/external_address = "'$MY_EXTERNAL_ADDR'"/' $CONFIG_DIR/config.toml \
   && sed -i 's/^max_num_inbound_peers =.*$/max_num_inbound_peers = 80/' $CONFIG_DIR/config.toml \
   && sed -i 's/^max_num_outbound_peers =.*$/max_num_outbound_peers = 40/' $CONFIG_DIR/config.toml
 ```
