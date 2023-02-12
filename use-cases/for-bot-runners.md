@@ -47,7 +47,6 @@ docker run \
        -e PREFIX=nois \
        -e DENOM=unois \
        -e NOIS_CONTRACT=$NOIS_CONTRACT \
-       -e CHAIN_HASH=8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce \
        -e ENDPOINT=$ENDPOINT \
        -e GAS_PRICE=0.05unois \
        noislabs/nois-bot:latest
