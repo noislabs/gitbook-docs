@@ -22,6 +22,8 @@ This is why they are incentivised and constitute a critical piece of nois.
 
 ### Using a Docker image
 
+The Docker image is probably the most convenient way to run the bot.
+
 1. Install Docker as explained [here](https://docs.docker.com/engine/install/ubuntu/)
 2. Download the latest version of the bot image: `docker pull noislabs/nois-bot:latest`
 3. Run the bot as follows:
@@ -50,6 +52,10 @@ docker run \
        -e GAS_PRICE=0.05unois \
        noislabs/nois-bot:latest
 </code></pre>
+
+#### Upgrading Docker image
+
+Run `docker pull noislabs/nois-bot:latest` and re-start the bot as shown above.
 
 ### Using a plain Node.js script
 
