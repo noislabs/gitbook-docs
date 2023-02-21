@@ -30,8 +30,10 @@ The Docker image is probably the most convenient way to run the bot.
 
 <pre class="language-bash"><code class="lang-bash">#Make sure you have tokens in your wallet
 export MNEMONIC='&#x3C;YOUR_MNEMONICS_HERE>'
-#check https://docs.nois.network/networks-and-contracts. nois-oracle contract
-export NOIS_CONTRACT=nois14ex94lcyfsyjy3mj470yernkxykh2jvcvuepa63utqeuq4gggvmqx5sjm2
+
+#check #deployment discord channel for NOIS_DRAND_CONTRAC_ADDR
+export NOIS_CONTRACT=&#x3C;NOIS_DRAND_CONTRAC_ADDR>
+#example export NOIS_CONTRACT=nois14ex94lcyfsyjy3mj470yernkxykh2jvcvuepa63utqeuq4gggvmqx5sjm2
 export ENDPOINT=https://nois.rpc.bccnodes.com:443
 export MONIKER=your-beautiful-name
 <strong>#Many RPCs are available. For more info check discord #validator channel
