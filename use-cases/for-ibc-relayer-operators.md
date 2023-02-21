@@ -25,12 +25,15 @@ Install docker from this [link](https://docs.docker.com/engine/install/ubuntu/)
 ```shell
 export MNEMONIC='<YOUR_MNEMONICS_HERE>'
 
+#Check #deployment channel on discord for this value
+export NOIS_PROXY=<NOIS_PROXY_ON_CONSUMER_CHAIN>
+
 docker run \
             -e "MNEMONIC=$MNEMONIC" \
-            noislabs/nois-relayer:elgafar-1-stars1caqz4ye9uwm5mtqnyg6vtvqq2gkawlc95vn2c3ede3xxhsrk55fsggxw3u \
+            noislabs/nois-relayer:elgafar-1-$NOIS_PROXY \
             ibc-relayer start \
-            --src-connection=connection-18 \
-            --dest-connection=connection-10 \
+            --src-connection=connection-<Check_in https://ibc.nois.network> \
+            --dest-connection=connection-<Check_in https://ibc.nois.network> \
             --poll 3
 ```
 
@@ -39,26 +42,32 @@ docker run \
 ```shell
 export MNEMONIC='<YOUR_MNEMONICS_HERE>'
 
+#Check #deployment channel on discord for this value
+export NOIS_PROXY=<NOIS_PROXY_ON_CONSUMER_CHAIN>
+
 docker run \
             -e "MNEMONIC=$MNEMONIC" \
-            noislabs/nois-relayer:euphoria-2-aura1qrf8f9kyh4zzckz2zy52z5gppwweumvrlxqrgd4xr3ydf3sx4dlqt8lnt8 \
+            noislabs/nois-relayer:euphoria-2-$NOIS_PROXY \
             ibc-relayer start \
-            --src-connection=connection-18 \
-            --dest-connection=connection-30 \
+            --src-connection=connection-<Check_in https://ibc.nois.network> \
+            --dest-connection=connection-<Check_in https://ibc.nois.network> \
             --poll 3
 ```
 
-#### uni-5 => nois-testnet-003 relay
+#### uni-6 => nois-testnet-003 relay
 
 ```shell
 export MNEMONIC='<YOUR_MNEMONICS_HERE>'
 
+#Check #deployment channel on discord for this value
+export NOIS_PROXY=<NOIS_PROXY_ON_CONSUMER_CHAIN>
+
 docker run \
             -e "MNEMONIC=$MNEMONIC" \
-            docker.io/noislabs/nois-relayer:uni-5-juno1v82su97skv6ucfqvuvswe0t5fph7pfsrtraxf0x33d8ylj5qnrysdvkc95 \
+            docker.io/noislabs/nois-relayer:uni-5-$NOIS_PROXY \
             ibc-relayer start \
-            --src-connection=connection-267 \
-            --dest-connection=connection-28 \
+            --src-connection=connection-<Check_in https://ibc.nois.network> \
+            --dest-connection=connection-<Check_in https://ibc.nois.network> \
             --poll 3
 ```
 
@@ -69,9 +78,12 @@ docker run \
 ```shell
 export MNEMONIC='<YOUR_MNEMONICS_HERE>'
 
+#Check #deployment channel on discord for this value
+export NOIS_PROXY=<NOIS_PROXY_ON_CONSUMER_CHAIN>
+
 docker run \
             -e "MNEMONIC=$MNEMONIC" \
-            noislabs/nois-relayer:juno-1-<CONTRACT> \
+            noislabs/nois-relayer:juno-1-$NOIS_PROXY \
             ibc-relayer start \
             --src-connection=<CONNECTION> \
             --dest-connection=<CONNECTION>\
