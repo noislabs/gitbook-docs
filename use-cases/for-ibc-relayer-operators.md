@@ -24,51 +24,45 @@ Install docker from this [link](https://docs.docker.com/engine/install/ubuntu/)
 
 ```shell
 export MNEMONIC='<YOUR_MNEMONICS_HERE>'
+export CHAIN_ID=elgafar-1
 
-#Check #deployment channel on discord for this value
-export NOIS_PROXY=<NOIS_PROXY_ON_CONSUMER_CHAIN>
+#Check #deployment discord channel for this value
+export NOIS_PROXY=<NOIS_PROXY_ADDR_ON_CONSUMER_CHAIN>
+#example:
+#export NOIS_PROXY=juno162vdumcg626zxumvuh9u6vxcakr3rrn804dxfex8qfxnhrldl68ss0lrdn
 
-docker run \
-            -e "MNEMONIC=$MNEMONIC" \
-            noislabs/nois-relayer:elgafar-1-$NOIS_PROXY \
-            ibc-relayer start \
-            --src-connection=connection-<Check_in https://ibc.nois.network> \
-            --dest-connection=connection-<Check_in https://ibc.nois.network> \
-            --poll 3
+docker run -d -e "MNEMONIC=$MNEMONIC" \
+            noislabs/nois-relayer:$CHAIN_ID-$NOIS_PROXY-prd
 ```
 
 #### euphoria-2 => nois relay
 
 ```shell
 export MNEMONIC='<YOUR_MNEMONICS_HERE>'
+export CHAIN_ID=euphoria-2
 
-#Check #deployment channel on discord for this value
-export NOIS_PROXY=<NOIS_PROXY_ON_CONSUMER_CHAIN>
+#Check #deployment discord channel for this value
+export NOIS_PROXY=<NOIS_PROXY_ADDR_ON_CONSUMER_CHAIN>
+#example:
+#export NOIS_PROXY=juno162vdumcg626zxumvuh9u6vxcakr3rrn804dxfex8qfxnhrldl68ss0lrdn
 
-docker run \
-            -e "MNEMONIC=$MNEMONIC" \
-            noislabs/nois-relayer:euphoria-2-$NOIS_PROXY \
-            ibc-relayer start \
-            --src-connection=connection-<Check_in https://ibc.nois.network> \
-            --dest-connection=connection-<Check_in https://ibc.nois.network> \
-            --poll 3
+docker run -d -e "MNEMONIC=$MNEMONIC" \
+            noislabs/nois-relayer:$CHAIN_ID-$NOIS_PROXY-prd
 ```
 
 #### uni-6 => nois-testnet-003 relay
 
 ```shell
 export MNEMONIC='<YOUR_MNEMONICS_HERE>'
+export CHAIN_ID=uni-6
 
-#Check #deployment channel on discord for this value
-export NOIS_PROXY=<NOIS_PROXY_ON_CONSUMER_CHAIN>
+#Check #deployment discord channel for this value
+export NOIS_PROXY=<NOIS_PROXY_ADDR_ON_CONSUMER_CHAIN>
+#example:
+#export NOIS_PROXY=juno162vdumcg626zxumvuh9u6vxcakr3rrn804dxfex8qfxnhrldl68ss0lrdn
 
-docker run \
-            -e "MNEMONIC=$MNEMONIC" \
-            docker.io/noislabs/nois-relayer:uni-5-$NOIS_PROXY \
-            ibc-relayer start \
-            --src-connection=connection-<Check_in https://ibc.nois.network> \
-            --dest-connection=connection-<Check_in https://ibc.nois.network> \
-            --poll 3
+docker run -d -e "MNEMONIC=$MNEMONIC" \
+            noislabs/nois-relayer:$CHAIN_ID-$NOIS_PROXY-prd
 ```
 
 #### &#x20;juno-1 => nois-testnet-003 relay
@@ -77,15 +71,13 @@ docker run \
 
 ```shell
 export MNEMONIC='<YOUR_MNEMONICS_HERE>'
+export CHAIN_ID=juno-1
 
-#Check #deployment channel on discord for this value
-export NOIS_PROXY=<NOIS_PROXY_ON_CONSUMER_CHAIN>
+#Check #deployment discord channel for this value
+export NOIS_PROXY=<NOIS_PROXY_ADDR_ON_CONSUMER_CHAIN>
+#example:
+#export NOIS_PROXY=juno162vdumcg626zxumvuh9u6vxcakr3rrn804dxfex8qfxnhrldl68ss0lrdn
 
-docker run \
-            -e "MNEMONIC=$MNEMONIC" \
-            noislabs/nois-relayer:juno-1-$NOIS_PROXY \
-            ibc-relayer start \
-            --src-connection=<CONNECTION> \
-            --dest-connection=<CONNECTION>\
-            --poll 3
+docker run -d -e "MNEMONIC=$MNEMONIC" \
+            noislabs/nois-relayer:$CHAIN_ID-$NOIS_PROXY-prd
 ```
