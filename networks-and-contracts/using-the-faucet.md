@@ -7,7 +7,7 @@ The faucet can be used via an HTTP POST request.
 Go to #faucet channel on nois discord [https://chat.nois.network ](https://chat.nois.network)and type \
 `!faucet <YOUR ADDRESS>`
 
-### With curl
+### With curl (deprecated. Use discord)
 
 From command line you can use curl:
 
@@ -18,7 +18,7 @@ curl -X POST \
   https://faucet.noislabs.com/credit
 ```
 
-### With Postman
+### With Postman  (deprecated. Use discord)
 
 See the following screenshot:
 
