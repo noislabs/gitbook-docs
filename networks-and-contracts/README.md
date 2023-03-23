@@ -1,7 +1,12 @@
 # 🌐 Networks and contracts
 
+{% hint style="danger" %}
+#### This section has been moved to [https://docs2.nois.network/networks.html](https://docs2.nois.network/networks.html)
+{% endhint %}
+
 {% tabs %}
 {% tab title="nois-testnet-003" %}
+\
 
 
 | key          | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Description                                                                                                                                                                                 |
@@ -18,16 +23,6 @@
 {% endtab %}
 
 {% tab title="nois-testnet-002" %}
-| key          | value                                                                                                                                                                            | Description                                                                                                                                                                                |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| chain ID     | nois-testnet-002                                                                                                                                                                 |                                                                                                                                                                                            |
-| rpc          | <p>http://node-0.noislabs.com:26657<br>http://node-3.noislabs.com:26657</p>                                                                                                      |                                                                                                                                                                                            |
-| p2p          | <ul><li>a1222dfb8641e0cb55615b75e0122d5695be1f35@node-0.noislabs.com:26656</li></ul><ul><li>cf16671c00eec9a9a047a5c6aa8510cb681b64b8@node-3.noislabs.com:26656<br><br></li></ul> |                                                                                                                                                                                            |
-| faucet       | [https://faucet.noislabs.com/](https://faucet.noislabs.com/)                                                                                                                     | <p>send a POST request to <code>http://faucet.noislabs.com/credit</code>.<br>Example body:<br><code>{"address": "nois1v6n7xth3773843pvur343ra4a42wey6qzjg505","denom": "unois"}</code></p> |
-| genesis file | https://raw.githubusercontent.com/noislabs/testnets/main/nois-testnet-002/genesis.json                                                                                           |                                                                                                                                                                                            |
-| denom        | unois                                                                                                                                                                            |                                                                                                                                                                                            |
-| prefix       | nois                                                                                                                                                                             |                                                                                                                                                                                            |
-| gas-prices   | 0.05unois                                                                                                                                                                        |                                                                                                                                                                                            |
-| nois-oracle  | nois1nc5tatafv6eyq7llkr2gv50ff9e22mnf70qgjlv737ktmt4eswrq5z5suf                                                                                                                  |                                                                                                                                                                                            |
+
 {% endtab %}
 {% endtabs %}
