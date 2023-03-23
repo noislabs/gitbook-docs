@@ -4,6 +4,10 @@ description: On this page you find various ways to check the status of your node
 
 # Status checks
 
+{% hint style="danger" %}
+#### This section has been moved to [https://docs2.nois.network/run\_a\_node.html](https://docs2.nois.network/run\_a\_node.html)
+{% endhint %}
+
 ### p2p
 
 1. Ensure your external address is set correctly:\

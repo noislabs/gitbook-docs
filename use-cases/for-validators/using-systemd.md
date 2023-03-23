@@ -4,6 +4,10 @@ description: You can run noisd as a service for systemd.
 
 # Using systemd
 
+{% hint style="danger" %}
+#### This section has been moved to [https://docs2.nois.network/run\_a\_node.html](https://docs2.nois.network/run\_a\_node.html)
+{% endhint %}
+
 ### Creading the service file
 
 The following script creates the service file nois.service for systemd. The file was originally provided by Kolot, thank you!.
