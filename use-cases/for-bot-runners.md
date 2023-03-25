@@ -11,20 +11,7 @@ description: >-
 #### This section has been moved to [https://docs2.nois.network/networks.html](https://docs2.nois.network/networks.html)
 {% endhint %}
 
-{% hint style="info" %}
-Drand-bots do not and cannot generate randomness. The simply relay it from drand to nois chains.
-{% endhint %}
 
-{% hint style="info" %}
-Drand-bots are never slashed and do not need to put any collateral simply because they cannot cheat.
-{% endhint %}
-
-{% hint style="warning" %}
-Although drand-bots cannot impact the outcome of the randomness, they can impact the availability of the randomness by stopping to work or by failing to submit to the nois chain. \
-This is why they are incentivised and constitute a critical piece of nois.
-{% endhint %}
-
-### Using a Docker image
 
 The Docker image is probably the most convenient way to run the bot.
 
