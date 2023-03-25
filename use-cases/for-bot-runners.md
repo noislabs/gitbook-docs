@@ -7,6 +7,10 @@ description: >-
 
 # 🤖 For Bot Runners
 
+{% hint style="danger" %}
+#### This section has been moved to [https://docs2.nois.network/networks.html](https://docs2.nois.network/networks.html)
+{% endhint %}
+
 {% hint style="info" %}
 Drand-bots do not and cannot generate randomness. The simply relay it from drand to nois chains.
 {% endhint %}
