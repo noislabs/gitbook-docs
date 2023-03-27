@@ -30,6 +30,7 @@ export MONIKER=your-beautiful-name
 <strong>#Many RPCs are available. For more info check discord #validator channel
 </strong><strong>#https://nois-testnet.rpc.kjnodes.com/
 </strong>#https://rpc-t.nois.nodestake.top/
+#https://testrpc-nois.d-stake.xyz/
 #https://nois.rpc.bccnodes.com/
 #http://nois.cryptech.com.ua:26657/
 
