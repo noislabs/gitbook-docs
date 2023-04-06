@@ -1,5 +1,9 @@
 # 🛠 For DAPP Developers
 
+{% hint style="danger" %}
+#### This section has been moved to [https://docs2.nois.network](https://docs2.nois.network/networks.html)
+{% endhint %}
+
 {% hint style="info" %}
 **Good to know:** This section is intended for developers who are building applications that consume the randomness.
 
